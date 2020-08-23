@@ -15,6 +15,20 @@ code.hljs:not(.inline)::before {
 	color: var(--black);
 }
 
+code::before {
+	text-shadow: none;
+}
+
+code:not(.inline) [class*="meta"],
+code:not(.inline) [class*="comment"] {
+	text-shadow: 0px 0px 5px var(--fg2o);
+}
+
+code:not(.inline),
+code:not(.inline) * {
+	text-shadow: 0px 0px 5px var(--fg1o);
+}
+
 #app-mount * {
 	scrollbar-width: none !important;
 }
